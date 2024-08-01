@@ -1,0 +1,135 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+.blockchain-hunts-page {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/003/988/583/non_2x/grunge-vintage-ray-background-dirty-blue-retro-sunburst-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.background-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    text-align: center;
+    color: white;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.title {
+    font-size: 3.5em;
+    margin: 0 0 20px 0;
+    animation: slideInFromTop 1s ease-out;
+}
+
+@keyframes slideInFromTop {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin: 20px 0;
+    animation: slideInFromBottom 1s ease-out;
+}
+
+@keyframes slideInFromBottom {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+.register-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    margin: 30px 0;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInButton 2s;
+}
+
+.register-button:hover {
+    background-color: #ff3311;
+    transform: scale(1.1);
+}
+
+@keyframes fadeInButton {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    animation: fadeInFeatures 3s;
+    gap: 10px;
+}
+
+@keyframes fadeInFeatures {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.feature-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card h2 {
+    margin: 0 0 15px 0;
+    font-size: 1.8em;
+    animation: bounceIn 1.5s;
+}
+
+@keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.feature-card p {
+    margin: 0;
+    font-size: 1.2em;
+    animation: fadeInText 2s;
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

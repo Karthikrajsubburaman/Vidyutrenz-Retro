@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f8f4e3;
+}
+
+.contact-page {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/025/873/998/non_2x/simple-vintage-retro-background-free-vector.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-container {
+    background: rgba(248, 244, 227, 0.9); /* Slightly opaque background to make text readable */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #d1b380; /* Adding a border to enhance the retro look */
+    animation: fadeIn 2s ease-in-out;
+}
+
+.contact-containers {
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.contact-container h2 {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #d96459;
+    text-shadow: 2px 2px 0px #fff; /* Adding a slight shadow for a retro effect */
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.contact-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    animation: fadeInUp 1s ease-in-out;
+    flex: 1 1 200px; /* Ensure items take up equal space and wrap properly */
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.contact-item img {
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    filter: sepia(1); /* Adding a sepia filter for a vintage look */
+    animation: rotateIn 1s ease-in-out;
+}
+
+@keyframes rotateIn {
+    from { transform: rotate(-180deg); opacity: 0; }
+    to { transform: rotate(0deg); opacity: 1; }
+}
+
+.contact-item span {
+    font-size: 18px;
+    color: #555;
+    background: linear-gradient(to bottom, #fff 0%, #e6e6e6 100%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Ensure text is centered under icons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .contact-container h2 {
+        font-size: 28px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contact-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-item span {
+        font-size: 16px;
+        padding: 3px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .contact-container h2 {
+        font-size: 24px;
+        padding-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contact-item img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .contact-item span {
+        font-size: 14px;
+        padding: 2px 6px;
+    }
+}
